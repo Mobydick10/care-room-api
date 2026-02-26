@@ -1,12 +1,15 @@
+server:
+  port: ${PORT:8080}
+
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/promptgenius
-    username: promptgenius
-    password: promptgenius
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/promptgenius}
+    username: ${DATABASE_USER:promptgenius}
+    password: ${DATABASE_PASSWORD:promptgenius}
   jpa:
     hibernate:
       ddl-auto: none
-    show-sql: true
+    show-sql: false
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
