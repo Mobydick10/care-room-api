@@ -3,9 +3,9 @@ server:
 
 spring:
   datasource:
-    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/promptgenius}
-    username: ${DATABASE_USER:promptgenius}
-    password: ${DATABASE_PASSWORD:promptgenius}
+    url: ${DATABASE_URL:jdbc:postgresql://interchange.proxy.rlwy.net:36723/railway?sslmode=require}
+    username: ${DATABASE_USER:postgres}
+    password: ${DATABASE_PASSWORD:HJqZNXiaylYpmzMfXXWwLDOcSUPmpRnI}
   jpa:
     hibernate:
       ddl-auto: none
